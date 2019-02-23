@@ -75,6 +75,31 @@ section {
 
 /*****HOMEPAGE*****/
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 20px 30px;
+  list-style: none;
+  font-weight: bold;
+  
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #393937;
+}
+
+nav ul a:hover {
+  border-bottom: 3px solid #393937;
+}
+
+nav ul li:last-child {
+  margin-right: 40px;
+}
+
 /* Header */
 header {
   text-align: center;
@@ -98,6 +123,20 @@ header img {
 .what-to-expect-section {
   background: #bdd5ea;
   border-bottom: 1px dashed #495867;
+}
+
+.what-to-expect-section h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.what-to-expect-section ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.what-to-expect-section ul li {
+  list-style: none;
 }
 
 
@@ -269,5 +308,95 @@ footer {
   display: inline-block;
   border: none;
 }
+
+/* MEDIA QUERIES */
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {   /* based on 768px */
+
+  .three-points-section-image {
+    display: none;
+    width: 200px;
+  }
+
+  .three-points-section-text {
+    width: 100%;
+  }
+
+  .column1, .column2 {
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 479px) {   /* based on 480px */
+
+  /* Home Page */
+
+  #main-header h1 {
+    font-size: 28px;
+  }
+
+  #main-header h2 {
+    font-size: 26px;
+  }
+
+  .what-to-expect-section ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .what-to-expect-section ul li {
+    padding-bottom: 15px;
+  }
+
+  .three-points-section img {
+    display: none;
+    
+  }
+
+  .three-points-section-text {
+    text-align: left;
+    width: 100%;
+  }
+
+   .buy-btn {
+    font-size: 15px;
+  }
+
+  .column1, .column2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .speakers-text{
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    
+  }
+  .speakers img {
+    display: none;
+  }
+
+  /* Tickets Page */
+  #tickets-header h1 {
+    font-size: 28px;
+  }
+
+  #tickets-header h2 {
+    font-size: 26px;
+  }
+  
+}
+
+
+
+
 
 
