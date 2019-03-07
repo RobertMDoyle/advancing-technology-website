@@ -105,7 +105,7 @@ header {
   text-align: center;
   color: #ffffff;
   padding: 80px 0;
-  background: url('images/conference-hero.jpg');
+  background: url('./images/conference-hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
