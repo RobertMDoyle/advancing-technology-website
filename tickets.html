@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:700" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Tickets</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
+        <header id="tickets-header">
+            <img src="images/hero-symbol.jpg" alt="hero symbol">
+            <h1>ADVANCING TECHNOLOGY</h1>
+            <h2>1st Annual Budding Developers Conference</h2>
+            <p>Orlando, FL-October 11, 2019</p>
+        </header>
+        <section id="order-tickets">
+            <div class="wrap">
+                <h2>Get your tickets!</h2>
+                <div class="order-tickets-form">
+                    <h3>Your Info</h3>
+                    <form method="post" action="">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder=" NAME" style="height: 30px;"><br>
+                        <label for="email">Email:&nbsp; </label>
+                        <input type="text" name="email" placeholder=" EMAIL" style="height: 30px;"><br>
+                        <h3>Package</h3>
+                        <select name="package" id="package-options">
+                            <option value="standard">Standard - $149</option>
+                            <option value="premium">Premium - $249</option>
+                        </select><br>
+                        <p>
+                            <input type="checkbox" name="lodging" value="lodging"> Add on Lodging - $99<br>
+                            <input type="checkbox" name="meals" value="meals"> Add on meals - $119<br>
+                        </p>
+                        <input type="submit" value="Submit" class="buy-btn" id="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy;&nbsp;2019</p>
+        </footer>
+
+        <!-- START MODAL  -->
+        <div id="easter-egg-modal" class="modal-hidden">
+            <div class="modal-content">
+                <span class="close">x</span>
+                <label for="easter-egg-input">Enter Your Code</label><br><br>
+                <input id="easter-egg-input" type="text">
+            </div>
+        </div>
+        <!-- END MODAL -->
+
+    </body>
+
+    </html>
