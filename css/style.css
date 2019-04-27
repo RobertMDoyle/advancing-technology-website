@@ -309,6 +309,55 @@ footer {
   border: none;
 }
 
+#easter-egg-modal {
+  width: 20%;
+  height: 200px;
+  background-color: #fe5f55;
+  position: fixed;
+  top: 225px;
+  left: 40%;
+  right: 40%;
+  border-radius: 10px;
+}
+
+.close {
+display: block;
+position: absolute;
+top: 5px;
+right: 10px;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+.modal-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-shown {
+  display: block;
+}
+
+#click-o {
+  cursor: pointer;
+}
+
+
+/* Countdown Timer */
+
+#countdown {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 /* MEDIA QUERIES */
 
 
