@@ -358,6 +358,59 @@ cursor: pointer;
   font-weight: bold;
 }
 
+/* SPEAKER RATING PAGE *
+********************************/
+.speaker-rating-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.rating-button {
+  display: flex;
+  background-color: #fe5f55;
+  font-size: 1em;
+  color: #fff;
+  padding: 18px;
+  width: 200px;
+  height: 75px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.rating-button:hover {
+  background-color: #495867;
+}
+
+.top-3-speakers {
+  text-align: center;
+}
+
+.submit-rating-btn {
+  display: flex;
+  background-color: #fe5f55;
+  font-size: 1em;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.submit-rating-btn:hover {
+  background-color: #495867;
+}
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 
@@ -441,6 +494,7 @@ cursor: pointer;
   #tickets-header h2 {
     font-size: 26px;
   }
+
   
 }
 
