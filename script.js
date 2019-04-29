@@ -59,8 +59,28 @@ if (document.getElementById("countdown")) {
             console.log('countdown running');
 };
 
+// Top Three Script
+if (document.getElementsByClassName("rating-button")) {
 
-     
+    var rating = document.getElementsByClassName("rating-button");
+    var rate = Array.from(rating);
+
+    for ( var i = 0; i < rate.length; i++) {
+        rate[i].addEventListener('click', function(e) {
+           
+            if (e.returnValue === true) {
+                var x = e.target.textContent
+                document.getElementById('top-3').innerHTML = x;
+            }   
+            
+            console.log(e);
+        });
+        
+    }
+    
+};
+
+ 
 
 
 
