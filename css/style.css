@@ -403,6 +403,19 @@ cursor: pointer;
 }
 
 
+@keyframes textColorChange {
+  0% {color: #BDD5EA;}
+  50% {color: #fe5f55;}
+  100% {color: #BDD5EA;}
+}
+
+#thank-you {
+  text-align: center;
+  font-size: 60px;
+  margin: 200px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: textColorChange 2s infinite;
+}
 
 
 

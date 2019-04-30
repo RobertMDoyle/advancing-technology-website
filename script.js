@@ -63,22 +63,45 @@ if (document.getElementById("countdown")) {
 if (document.getElementsByClassName("rating-button")) {
 
     var rating = document.getElementsByClassName("rating-button");
+    //convert HTML collection to Array
     var rate = Array.from(rating);
-
+    //empty array for selected three
+    var topThree = [];
+    //for loop to add event listener to each name button
     for ( var i = 0; i < rate.length; i++) {
         rate[i].addEventListener('click', function(e) {
-           
-            if (e.returnValue === true) {
-                var x = e.target.textContent
-                document.getElementById('top-3').innerHTML = x;
-            }   
             
-            console.log(e);
+            //will only push to top 3 array as long as it holds 3 or less or alert will show
+            if (topThree.length < 3) {
+                topThree.push(e.target.textContent);
+            } else {
+                alert("Too Many Choices");
+            }
+
+            //loop for top 3 array that then shows each name on a new line using 'join' method
+            for (var i = 0; i < topThree.length; i++) {
+                document.getElementById('top-3').innerHTML = topThree.join("<br>");
+                console.log(topThree[i]);
+            }
+             console.log(e);
         });
-        
     }
-    
+
+    //add click event for submit button. When clicked <section id="speaker-rating-section"> is displayed as none
+    var submit = document.querySelector('.submit-rating-btn');
+    submit.addEventListener('click', function(e) {
+        document.getElementById('speaker-rating-section').style.display = 'none';
+        //innerHTML for thank you to a new div in HTML that is also styled in CSS
+        document.getElementById('thank-you').innerHTML = "Thank You";
+        console.log(e);
+    });
+
 };
+
+
+
+
+
 
  
 
